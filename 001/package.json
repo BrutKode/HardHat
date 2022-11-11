@@ -1,0 +1,23 @@
+{
+  "name": "begginer-template",
+  "version": "1.0.0",
+  "description": "The Start Of A Never Ending Journey, Used Truffle Until Now, Shifting To HardHat For The Public Good, And Also Take Oath To Maintain GitHub",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "decentralisation",
+    "web3",
+    "defi",
+    "crypto",
+    "blockchain",
+    "ethereum",
+    "bitcoin"
+  ],
+  "author": "BrutKode",
+  "license": "MIT",
+  "devDependencies": {
+    "hardhat": "^2.12.2"
+  }
+}
