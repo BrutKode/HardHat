@@ -1,27 +1,21 @@
 //SPDX-License-Identifier: MIT
 pragma solidity 0.8.8;
 
+import "hardhat/console.sol";
+
 contract Token {
-  string public name = 'Cheap FTX';
-  string public symbol = 'CFTX';
-  uint256 public totalSupply = 1000000;
-  address public owner;
-  mapping(address => uint) balances;
 
-  constructor() {
-    balances[msg.sender] = totalSupply;
-    owner = msg.sender;
-  }
+    uint256 num;
 
-  function transfer(address _recipient, uint _amount) external {
-    require(balances[msg.sender] >= _amount, "Not Enough Funds :(");
-    balances[msg.sender] -= _amount;
-    balances[_recipient] += _amount;
-  }
+    function setNum(uint256 _num) external {
+        console.log("Value of Num: ", num);
+        num = _num;
+        console.log("Updated Value: ", num);
+    }
 
-  function balanceOf(address hodler) external view returns (uint) {
-    return balances[hodler];
-  }
+    function getNum() external view returns (uint256) {
+        return num;
+    }
 
 }
 
