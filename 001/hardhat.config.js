@@ -1,5 +1,6 @@
 /** @type import('hardhat/config').HardhatUserConfig */
 
+require('hardhat-abi-exporter');
 require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 
@@ -12,6 +13,16 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 });
 
 module.exports = {
+  abiExporter: [
+    {
+      path: './frontend/src/artifacts/pretty',
+      pretty: true,
+    },
+    {
+      path: './frontend/src/artifacts/ugly',
+      pretty: false,
+    },
+  ],
   gasReporter: {
     enabled: true,
     currency: "USD",
