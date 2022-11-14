@@ -1,0 +1,16 @@
+{
+  "name": "fork-eth",
+  "version": "1.0.0",
+  "description": "Forking the ethereum mainnet",
+  "main": "hardhat.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "BrutKode",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.12.2"
+  }
+}
