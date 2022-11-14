@@ -1,0 +1,30 @@
+{
+  "name": "upgradeable",
+  "version": "1.0.0",
+  "description": "proxy smart contract implementation",
+  "main": "hardhat.config.js",
+  "scripts": {
+    "test": "npx hardhat compile"
+  },
+  "keywords": [
+    "blockchain",
+    "web3",
+    "defi",
+    "decentralised",
+    "ethereum",
+    "metaverse"
+  ],
+  "author": "BrutKode",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.1",
+    "@nomiclabs/hardhat-etherscan": "^3.1.2",
+    "@openzeppelin/hardhat-upgrades": "^1.21.0",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.12.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.0",
+    "@openzeppelin/contracts-upgradeable": "^4.8.0"
+  }
+}
