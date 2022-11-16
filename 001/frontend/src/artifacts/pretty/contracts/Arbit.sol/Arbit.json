@@ -1,0 +1,17 @@
+[
+  "constructor()",
+  "function SushiswapRouterAddress() view returns (address)",
+  "function UniswapRouterAddress() view returns (address)",
+  "function _daiAddress() view returns (address)",
+  "function arbitrageSwapFromSushiswap(uint256,uint256,uint256)",
+  "function arbitrageSwapFromUniswap(uint256,uint256,uint256)",
+  "function getOut(uint256) view returns (uint256)",
+  "function owner() view returns (address)",
+  "function permitWithDAI(uint256,uint256,bool,uint8,bytes32,bytes32)",
+  "function returnAllowance() view returns (uint256)",
+  "function returnAmountOfDAI() view returns (uint256)",
+  "function returnAmountOfWETH() view returns (uint256)",
+  "function returnOwner() view returns (address)",
+  "function revivalTransfer(address,uint256)",
+  "function transferOwnership(address)"
+]

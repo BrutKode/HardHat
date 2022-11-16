@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './css/styleBox.css';
-import VaultBuild from 'contracts/Arbit.json'
+import VaultBuild from '../../artifacts/ugly/contracts/Arbit.sol/Arbit.json'
 import Web3 from "web3/dist/web3.min";
 
 let vaultContract;

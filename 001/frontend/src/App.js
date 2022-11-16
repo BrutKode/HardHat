@@ -20,10 +20,10 @@ import { jsonRpcProvider } from 'wagmi/providers/jsonRpc';
 import { ViewContractDetails } from './components/Main/sol';
 
 const rpi = {
-  id: 1337,
-  name: 'Raspberry Pi',
-  network: 'rpi',
-  iconUrl: 'https://icon-library.com/images/raspberry-pi-icon/raspberry-pi-icon-17.jpg',
+  id: 31337,
+  name: 'HardHat',
+  network: 'HH',
+  iconUrl: 'http://www.sellingtimeshares.net/wp-content/uploads/hardhat-safety-logo-310x298.png',
   iconBackground: '#fff',
   nativeCurrency: {
     decimals: 18,
@@ -31,7 +31,7 @@ const rpi = {
     symbol: 'ETH',
   },
   rpcUrls: {
-    default: 'HTTP://127.0.0.1:8000',
+    default: 'http://127.0.0.1:8545/',
   },
   blockExplorers: {
     default: { name: 'Etherscam', url: 'https://etherscan.io' },

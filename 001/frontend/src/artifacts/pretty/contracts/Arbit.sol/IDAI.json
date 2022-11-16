@@ -1,0 +1,6 @@
+[
+  "function allowance(address,address) view returns (uint256)",
+  "function permit(address,address,uint256,uint256,bool,uint8,bytes32,bytes32)",
+  "function transfer(address,uint256) returns (bool)",
+  "function transferFrom(address,address,uint256) returns (bool)"
+]

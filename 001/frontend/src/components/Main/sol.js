@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import VaultBuild from 'contracts/Arbit.json'
+import VaultBuild from '../../artifacts/ugly/contracts/Arbit.sol/Arbit.json'
 import Web3 from "web3/dist/web3.min";
 import { signDaiPermit } from 'eth-permit';
 import "./css/style.css";
@@ -22,6 +22,7 @@ export async function connectAccount() {
         console.log(err);
         return;
       });
+killall -9 brave
 
     window.ethereum.on('accountsChanged', async function (accounts) {
       selectedAccount = accounts[0];
