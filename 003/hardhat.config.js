@@ -5,7 +5,7 @@ module.exports = {
   networks: {
     hardhat: {
       forking: {
-        url: "https://eth-mainnet.g.alchemy.com/v2/2QTzW_1v8IA1OvXuJ7srKY4kZcdqgqGt",
+        url: process.env.INFURA_API,
       },
     },
   }
