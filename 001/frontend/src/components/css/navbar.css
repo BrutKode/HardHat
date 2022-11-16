@@ -1,0 +1,27 @@
+.customText {
+    color: red;
+}
+
+.cus-nav {
+    color: #00ffe0;
+}
+
+.cus-btn {
+    font-size: small;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-weight:bold;
+    color: #00ffe0;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+}
+
+.cus-btn:hover {
+    color: yellow;
+}

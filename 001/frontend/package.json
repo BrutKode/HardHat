@@ -1,16 +1,24 @@
 {
-  "name": "frontend",
-  "version": "0.1.0",
+  "name": "arbit",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@rainbow-me/rainbowkit": "^0.6.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "ethers": "^5.7.2",
+    "contracts": "file:../build/contracts",
+    "eth-permit": "^0.2.3",
+    "ethers": "^5.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-vanilla-tilt": "^1.0.0",
+    "vanilla-tilt": "^1.7.2",
+    "wagmi": "^0.6.7",
+    "web-vitals": "^2.1.4",
+    "web3": "^1.7.5",
+    "web3modal": "^1.9.9"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,5 +43,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "author": "BrutKode",
+  "license": "MIT"
 }
