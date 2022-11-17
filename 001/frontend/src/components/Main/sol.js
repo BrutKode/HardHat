@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
-import VaultBuild from '../../artifacts/ugly/contracts/Arbit.sol/Arbit.json'
+import VaultBuild from '../../artifacts/ugly/contracts/Arbit.sol/Arbit.json';
 import Web3 from "web3/dist/web3.min";
 import { signDaiPermit } from 'eth-permit';
 import "./css/style.css";
+import Address from '../../artifacts/Address.json';
 
 let vaultContract;
 let selectedAccount;
@@ -22,7 +23,6 @@ export async function connectAccount() {
         console.log(err);
         return;
       });
-killall -9 brave
 
     window.ethereum.on('accountsChanged', async function (accounts) {
       selectedAccount = accounts[0];
@@ -42,14 +42,16 @@ killall -9 brave
 
   const web3 = new Web3(provider);
   const netId = await web3.eth.net.getId();
-  const deployedAddress = VaultBuild.networks[netId].address;
+  const deployedAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
   vaultContract = new web3.eth.Contract(
-    VaultBuild.abi,
+    VaultBuild,
     deployedAddress
   );
 
   isInitialized = true;
 }
+
+console.log(VaultBuild);
 
 async function permit() {
   if (!isInitialized) {
