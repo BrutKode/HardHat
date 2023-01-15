@@ -18,6 +18,7 @@
   "author": "BrutKode",
   "license": "MIT",
   "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
     "hardhat": "^2.12.6"
   }
 }
