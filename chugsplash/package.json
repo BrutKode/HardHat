@@ -18,6 +18,8 @@
   "author": "BrutKode",
   "license": "MIT",
   "devDependencies": {
+    "@chugsplash/core": "^0.3.24",
+    "@chugsplash/plugins": "^0.8.9",
     "@nomicfoundation/hardhat-toolbox": "^2.0.1",
     "hardhat": "^2.12.6"
   }
