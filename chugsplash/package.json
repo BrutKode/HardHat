@@ -16,5 +16,8 @@
     "metaverse"
   ],
   "author": "BrutKode",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "hardhat": "^2.12.6"
+  }
 }
